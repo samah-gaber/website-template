@@ -1,0 +1,229 @@
+// fonts
+@include fontFace($openSansRegular, "../fonts/OpenSans-Regular.ttf");
+@include fontFace($openSansItalic, "../fonts/OpenSans-Italic.ttf");
+@include fontFace($openSansBold, "../fonts/OpenSans-Bold.ttf");
+@include fontFace($openSansSemiBold, "../fonts/OpenSans-SemiBold.ttf");
+@include fontFace($myriadProRegular, "../fonts/MYRIADPRO-REGULAR.OTF");
+@include fontFace($ralewaySemiBold, "../fonts/Raleway-SemiBold.ttf");
+@include fontFace($playRegular, "../fonts/Play-Regular.ttf");
+@include fontFace($playBold, "../fonts/Play-Bold.ttf");
+// general layout
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+	font-size: $rootFontSize;
+}
+.overlay {
+    @extend %overlay;
+}
+.ghost-btn {
+    background-color: transparent;
+    color: $whiteColor;
+    border: 1px solid $whiteColor;
+    @extend %txt-play-reg-14-white;
+    padding: 1.2rem 2.8rem;
+    transition-duration: 0.4s;
+    &:hover {
+        background-color: $whiteColor;
+        color: $primaryColor;
+    }
+    &:active {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+.primary-btn {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    border: none;
+    @extend %txt-opensans-bold-14-white;
+    padding: 1.1rem 2.5rem;
+    &:active {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+}
+.bg-light {
+    background-color: $bgColorLight;
+}
+.bg-dark {
+    background-color: $bgColorDark;
+}
+.bg-primary {
+    background-color: $primaryColor;
+}
+.bg-black {
+    background-color: $blackColor;
+}
+// main header section
+.main-header {
+    .top-header {
+        padding: 1.3rem 0;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(242,242,242,0.75);
+        .social {
+            .col-3 {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        i {
+            color: $secondaryColor;
+            &:hover {
+                color: $primaryColor;
+            }
+        }
+        span {
+            @extend %txt-myriadpro-reg-14-seondary;
+        }
+    }
+    nav {
+        padding: 2rem 0;
+        ul {
+            margin-left: auto;
+        }
+        li {
+            margin-right: 2.1rem;
+            &:last-child {
+                margin-top: 6px;
+            }
+            &.active a {
+                color: $primaryColor;
+            }
+            &:hover a {
+                color: $primaryColor;
+            }
+            a {
+                @extend %txt-opensans-reg-14-seondary;
+            }
+        }
+        button#lang-btn {
+            background-color: transparent;
+            border: none;
+            @extend %txt-opensans-reg-14-seondary;
+            outline: none;
+        }
+    }
+}
+// bread crumps section
+.bread-crumps {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.7rem 0;
+        p:first-child {
+            @extend %txt-play-reg-24-white;
+        }
+        p:nth-child(2), a {
+            @extend %txt-opensans-reg-14-white;
+        }
+    }
+}
+// get in touch section
+.get-in-touch {
+    padding: 3.7rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    p {
+        @extend %txt-play-reg-24-white;
+    }
+}
+// footer section
+footer {
+    .top-part {
+        padding-top: 4.2rem;
+        & > div {
+            margin-bottom: 4.2rem;
+        }
+        h6 {
+            @extend %txt-play-bold-20-primary;
+            margin-bottom: 2.4rem;
+        }
+        p, a {
+            @extend %txt-opensans-reg-14-white;
+        }
+        ul {
+            list-style: none;
+        }
+        .related-links, .news-and-media {
+            li::before {
+                @extend %beforeIcon;
+                content: "\f054";
+                color: $primaryColor;
+            }
+        }
+        .get-touch {
+            li:first-child::before {
+                @extend %beforeIcon;
+                content: "\f3c5";
+                color: $primaryColor;
+            }
+            li:nth-child(2)::before {
+                @extend %beforeIcon;
+                content: "\f095";
+                color: $primaryColor;
+            }
+            li:nth-child(3)::before {
+                @extend %beforeIcon;
+                content: "\f0e0";
+                color: $primaryColor;
+            }
+        }
+    }
+    .lower-part {
+        padding: 2.5rem 0;
+        p {
+            @extend %txt-opensans-reg-14-white;
+        }
+        span::before {
+            @extend %beforeIcon;
+            content: "\f004";
+            color: $redColor;
+        }
+    }
+}
+// araboc page style 
+html[lang='ar'] {
+    .main-header {
+        nav ul {
+            margin-left: 0;
+            margin-right: auto;
+        }
+    }
+    footer {
+        .top-part {
+            .related-links, .news-and-media {
+                li::before {
+                    @extend %beforeIcon;
+                    content: "\f053";
+                    color: $primaryColor;
+                }
+            }
+            .get-touch {
+                li:nth-child(2)::before, li:nth-child(3)::before {
+                    content: none;
+                }
+                li:nth-child(2){
+                    direction: ltr;
+                    &::after {
+                        @extend %beforeIcon;
+                        content: "\f095";
+                        color: $primaryColor;
+                    }
+                }
+                li:nth-child(3)::after {
+                    @extend %beforeIcon;
+                    content: "\f0e0";
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}

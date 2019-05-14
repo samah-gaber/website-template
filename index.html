@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MASTIA</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-left">
+    <!-- start of main header section -->
+    <header class="main-header">
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 social">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 info">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="far fa-clock"></i>
+                                <span id="header-date">Mon-Sat:7:00-17:00</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-phone"></i>
+                                <span id="header-phone">+ 386 40 111 5555</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="far fa-envelope"></i>
+                                <span><a href="#" id="header-email">info@yourdomain.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/logo.png" alt="MASTIA">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navigation">
+                    <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="navigation-bar collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link" id="nav-home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-about-us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-pages">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link" id="nav-blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus.html" class="nav-link" id="nav-contact-us">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="lang-btn" class="ar" onclick="translatePage(event)">العربية</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of main header section -->
+    <!-- start of main section -->
+    <main class="row justify-content-center position-relative home-main">
+        <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="imgs/header1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imgs/header2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="imgs/header3.jpg" alt="Third slide">
+                </div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <div class="container text-content">
+            <div class="row justify-content-center text-center">
+                <div class="col-10">
+                    <h1 id="main-title">WE CARE ABOUT YOUR BUSINESS</h1>
+                </div>
+                <div class="col-8">
+                    <p id="main-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum consectetur egestas. Nulla nisi
+                        nisi, rutrum vitae nunc non, bibendum euismod nulla</p>
+                    <button type="button" class="ghost-btn" id="main-button">ABOUT US</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- end of main section -->
+    <!-- start of services section -->
+    <section class="services bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services1.png" alt="services1">
+                    <h4 id="service-1-title">Nibh Ridiculus</h4>
+                    <p id="service-1-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services2.png" alt="services2">
+                    <h4 id="service-2-title">grammatica del</h4>
+                    <p id="service-2-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services3.png" alt="services3">
+                    <h4 id="service-3-title">Europan lingues</h4>
+                    <p id="service-3-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services4.png" alt="services4">
+                    <h4 id="service-4-title">ipsum quia</h4>
+                    <p id="service-4-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services5.png" alt="services5">
+                    <h4 id="service-5-title">aliquam quaerat</h4>
+                    <p id="service-5-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+                <div class="col-8 col-md-6 col-lg-4 text-center service">
+                    <img src="imgs/services6.png" alt="services6">
+                    <h4 id="service-6-title">dolorem eum</h4>
+                    <p id="service-6-paragraph">Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus etmagnis dis parturie
+                        nt montes, nascetur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of services section -->
+    <!-- start of recent projects section -->
+    <section class="recent-projects">
+        <div class="container">
+            <h4 id="recent-projects-title">RECENT PROJECTS</h4>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="item-custom col-10 col-md-4">
+                                <img src="imgs/p1.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom col-10 col-md-4">
+                                <img src="imgs/p2.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom col-10 col-md-4">
+                                <img src="imgs/p3.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="item-custom col-10 col-md-4">
+                                <img src="imgs/p1.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom  col-10 col-md-4">
+                                <img src="imgs/p2.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom  col-10 col-md-4">
+                                <img src="imgs/p3.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="item-custom col-10 col-md-4">
+                                <img src="imgs/p1.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom  col-10 col-md-4">
+                                <img src="imgs/p2.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                            <div class="item-custom  col-10 col-md-4">
+                                <img src="imgs/p3.jpg" alt="project image" class="img-fluid">
+                                <div class="overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls-custom">
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of recent projects section -->
+    <!-- start of statistics section -->
+    <section class="statistics bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 text-center">
+                    <p class="number" id="statistics-1-number">503</p>
+                    <p class="label" id="statistics-1-label">COFFEE CUPS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <p class="number" id="statistics-2-number">75</p>
+                    <p class="label" id="statistics-2-label">PROJECTS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <p class="number" id="statistics-3-number">250</p>
+                    <p class="label" id="statistics-3-label">WORKING DAYS</p>
+                </div>
+                <div class="col-6 col-md-3 text-center">
+                    <p class="number" id="statistics-4-number">68</p>
+                    <p class="label" id="statistics-4-label">HAPPY CLIENTS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of statistics section -->
+    <!-- start of from blog section -->
+    <section class="from-blog">
+        <div class="container">
+            <h4 id="from-blog-title">FROM BLOG</h4>
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="item-custom col-10 col-md-6">
+                                <div class="media bg-light">
+                                    <img class="align-self-center mr-3" src="imgs/team1.jpg" alt="blogger image">
+                                    <div class="media-body">
+                                        <p class="mt-0 date" id="from-blog-card-1-date">23 Oct 2015</p>
+                                        <p class="blog-sec" id="from-blog-card-1-paragraph">Dummy text is text that is used in theublish industry or by web designers to occupy
+                                            the space which will later be </p>
+                                        <a href="#" id="from-blog-card-1-button">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-custom col-10 col-md-6">
+                                <div class="media bg-light">
+                                    <img class="align-self-center mr-3" src="imgs/team2.jpg" alt="blogger image">
+                                    <div class="media-body">
+                                        <p class="mt-0 date" id="from-blog-card-2-date">23 Oct 2015</p>
+                                        <p class="blog-sec" id="from-blog-card-2-paragraph">Dummy text is text that is used in theublish industry or by web designers to occupy
+                                            the space which will later be </p>
+                                        <a href="#" id="from-blog-card-2-button">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="item-custom col-10 col-md-6">
+                                <div class="media bg-light">
+                                    <img class="align-self-center mr-3" src="imgs/team3.jpg" alt="blogger image">
+                                    <div class="media-body">
+                                        <p class="mt-0 date" id="from-blog-card-3-date">23 Oct 2015</p>
+                                        <p class="blog-sec" id="from-blog-card-3-paragraph">Dummy text is text that is used in theublish industry or by web designers to occupy
+                                            the space which will later be </p>
+                                        <a href="#" id="from-blog-card-3-button">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-custom col-10 col-md-6">
+                                <div class="media bg-light">
+                                    <img class="align-self-center mr-3" src="imgs/team4.jpg" alt="blogger image">
+                                    <div class="media-body">
+                                        <p class="mt-0 date" id="from-blog-card-4-date">23 Oct 2015</p>
+                                        <p class="blog-sec" id="from-blog-card-4-paragraph">Dummy text is text that is used in theublish industry or by web designers to occupy
+                                            the space which will later be </p>
+                                        <a href="#" id="from-blog-card-4-button">READ MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls-custom">
+                    <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of from blog section -->
+    <!-- start of get in touch section -->
+    <section class="get-in-touch bg-primary">
+        <div class="container">
+            <p class="mb-0" id="get-in-touch-sentence">GO AHEAD AND FIND OUT HOW WE CAN HELP YOU!</p>
+            <button class="ghost-btn" id="get-in-touch-button">GET IN TOUCH</button>
+        </div>
+    </section>
+    <!-- end of get in touch section -->
+    <!-- start of footer section -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row top-part">
+                <div class="col-10 col-md-6 col-lg-3 about-us">
+                    <h6 id="footer-about-us-title">ABOUT US</h6>
+                    <p id="footer-about-us-paragraph">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+                        sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen</p>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 related-links">
+                    <h6 id="footer-related-links-title">RELATED LINKS</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-related-links-1">Official Site</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-2">CreativeMarket Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-3">Materializer page on CM</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-4">Electronic WP Theme</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-5">Was favvvv</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 news-and-media">
+                    <h6 id="footer-news-title">NEWS & MEDIA</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-news-1">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-2">News and Press Realeases</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-3">Interviews</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-4">Subsidiaries Media Contacts</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-5">Media Kit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 get-touch">
+                    <h6 id="footer-get-in-touch-title">GET IN TOUCH</h6>
+                    <p id="footer-get-in-touch-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-address">84 Street, City, State 24813</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-phone">+00(123)4567890</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-email">info@yourcompany.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lower-part bg-black text-center">
+            <p id="footer-copyrights">Made with
+                <span>by</span> Revolthemes.net All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer section -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/translation/indexarabiccontent.js"></script>
+    <script src="js/translation/indexenglishcontent.js"></script>
+    <script src="js/translation/translatescript.js"></script>
+</body>
+
+</html>

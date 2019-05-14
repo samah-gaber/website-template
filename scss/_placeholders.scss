@@ -1,0 +1,170 @@
+// fonts
+%txt-opensans-reg-14-seondary {
+    @include text($openSansRegular, $rootFontSize, $secondaryColor);
+}
+%txt-opensans-reg-14-white {
+    @include text($openSansRegular, $rootFontSize, $whiteColor);
+}
+%txt-opensans-italic-14-seondary {
+    @include text($openSansItalic, $rootFontSize, $secondaryColor);
+}
+%txt-opensans-bold-14-primary {
+    @include text($openSansBold, $rootFontSize, $primaryColor);
+}
+%txt-opensans-bold-14-white {
+    @include text($openSansBold, $rootFontSize, $whiteColor);
+}
+%txt-opensans-semibold-14-secondary {
+    @include text($openSansSemiBold, $rootFontSize, $secondaryColor);
+}
+%txt-myriadpro-reg-14-seondary {
+    @include text($myriadProRegular, $rootFontSize, $secondaryColor);
+}
+%txt-ral-semibold-50-white {
+    @include text($ralewaySemiBold, $rootFontSize*3.5, $whiteColor);
+}
+%txt-play-reg-14-white {
+    @include text($playRegular, $rootFontSize, $whiteColor);
+}
+%txt-play-reg-24-primary {
+    @include text($playRegular, $rootFontSize*1.7, $primaryColor);
+}
+%txt-play-reg-24-white {
+    @include text($playRegular, $rootFontSize*1.7, $whiteColor);
+}
+%txt-play-reg-26-white {
+    @include text($playRegular, $rootFontSize*1.8, $whiteColor);
+}
+%txt-play-reg-35-primary {
+    @include text($playRegular, $rootFontSize*2.5, $primaryColor);
+}
+%txt-play-bold-20-primary {
+    @include text($playBold, $rootFontSize*1.4, $primaryColor);
+}
+%txt-play-bold-24-secondary {
+    @include text($playBold, $rootFontSize*1.7, $secondaryColor);
+}
+%txt-play-bold-50-white {
+    @include text($playBold, $rootFontSize*3.5, $whiteColor);
+}
+// sections titles style
+%secTitle {
+    @extend %txt-play-reg-35-primary;
+        margin-bottom: 3.4rem;
+        &:after {
+            display: block;
+            height: 2px;
+            content: " ";
+            text-shadow: none;
+            background-color: $primaryColor;
+            width: 4.8rem;
+        }
+}
+// using icons in pseudo elements
+%beforeIcon {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 5px;
+}
+// ===== home page ===== //
+// overlay
+%overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: $overlayColor;
+}
+// services section
+%servicesStyle {
+    padding-top: 5.7rem;
+    .service {
+        margin-bottom: 3.5rem;
+        padding: 2rem;
+        transition-duration: 0.4s;
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+    h4 {
+        @extend %txt-play-reg-24-primary;
+    }
+    p {
+        @extend %txt-opensans-reg-14-seondary;
+    }
+}
+// carousel sections style
+%carouselStyle {
+    padding: 5.7rem 0 3rem 0;
+    .carousel-inner {
+        overflow: unset;
+    }
+    h4 {
+        @extend %secTitle;
+    }
+    .item-custom {
+        margin-bottom: 1.1rem;
+    }
+    .carousel-controls-custom {
+        display: flex;
+        justify-content: flex-end;
+        a {
+            position: static;
+            width: auto;
+            &.carousel-control-prev {
+                margin-right: 3px;
+            }
+        }
+        i {
+            padding: 0.4rem 0.5rem;
+            background-color: $primaryColor;
+        }
+    }
+}
+// ===== news page ===== //
+// news section titles
+%newsSecTitle {
+    @extend %txt-play-bold-24-secondary;
+    margin-bottom: 2.1rem;
+}
+// left section cards style
+%cardStyle {
+    .card {
+        border: none;
+        position: relative;
+        margin-bottom: 5.7rem;
+    }
+    img {
+        margin-bottom: 2.4rem;
+        transition-duration: 0.4s;
+        &:hover {
+            opacity: 0.5;
+            + .date {
+                opacity: 1;
+            }
+        }
+    }
+    .date {
+        padding: 1.2rem 0.7rem;
+        position: absolute;
+        top: 40%;
+        opacity: 0;
+        p {
+            @extend %txt-opensans-reg-14-white;
+        }
+    }
+    .card-body {
+        padding: 0;
+    }
+    .card-title {
+        @extend %newsSecTitle;
+    }
+    .card-text {
+        @extend %txt-opensans-reg-14-seondary;
+        margin-bottom: 1.2rem;
+    }
+    a {
+        margin-left: 79%;
+    }
+}

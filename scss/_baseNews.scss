@@ -1,0 +1,118 @@
+// main section
+main.news-main {
+    padding-top: 5.7rem;
+    // left section
+    #left-sec {
+        padding-bottom: 5.7rem;
+        // first page 
+        #page-1, #page-2, #page-3, #page-4 {
+            @extend %cardStyle;
+        }
+        #page-2, #page-3, #page-4 {
+            display: none;
+        }
+        nav {
+            .active {
+                background-color: $primaryColor;
+                color: $whiteColor;
+            }
+            .inactive {
+                // color: grey;
+                &:hover {
+                    background-color: $whiteColor;
+                }
+                i {
+                    color: grey;
+                }
+            }
+        }
+    }
+    // right section
+    #right-sec {
+        h5 {
+            @extend %newsSecTitle;
+        }
+        .search-bar {
+            position: relative;
+            margin-bottom: 1.9rem;
+            input {
+                border: none;
+                border-radius: 0;
+            }
+            i {
+                position: relative;
+                bottom: 22px;
+                margin: 0 10px;
+                color: $secondaryColor;
+                float: right;
+            }
+        }
+        .recent-posts {
+            .media {
+                margin-bottom: 2.1rem;
+            }
+            img {
+                margin-left: 1rem;
+            }
+            p {
+                @extend %txt-opensans-reg-14-seondary;
+            }
+            h6 {
+                @extend %txt-opensans-semibold-14-secondary;
+                font-weight: bold;
+            }
+        }
+        .latest-projects {
+            h5 {
+                @extend %newsSecTitle;
+            }
+            .col-6 {
+                margin-bottom: 2.1rem;
+            }
+        }
+        .blog-categories {
+            h5 {
+                @extend %newsSecTitle;
+            }
+            ul {
+                list-style: none;
+            }
+            li{
+                margin-bottom: 1.4rem;
+                &::before {
+                    @extend %beforeIcon;
+                    color: $primaryColor;
+                    content: "\f054";
+                }
+            }
+            a {
+                color: $secondaryColor;
+                @extend %txt-opensans-semibold-14-secondary;
+            }
+        }
+    }
+}
+// arabic page style
+html[lang='ar'] {
+    #left-sec {
+        .pagination {
+            i {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+    #right-sec {
+        .search-bar {
+            i {
+                float: left;
+            }
+        }
+        .blog-categories {
+            li::before {
+                @extend %beforeIcon;
+                content: "\f053";
+                color: $primaryColor;
+            }
+        }
+    }
+}

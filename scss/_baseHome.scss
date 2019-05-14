@@ -1,0 +1,110 @@
+// main section
+main.home-main {
+    .text-content {
+        position: absolute;
+        top: 35%;
+        h1 {
+            @extend %txt-ral-semibold-50-white;
+        }
+        p {
+            @extend %txt-opensans-reg-14-white;
+        }
+    }
+}
+// services section
+.services {
+    @extend %servicesStyle;
+}
+// recent projects
+.recent-projects {
+    @extend %carouselStyle;
+    .item-custom {
+        position: relative;
+        img, .overlay {
+            transition-duration: 0.4s;
+        }
+        &:hover {
+            img {
+                box-shadow: 15px 15px 0px 0px rgba(248,248,248,1);
+                transform: translate(-10px, -15px);
+            }
+            .overlay {
+                opacity: 1;
+                transform: translate(-10px, -15px);
+            }
+        }
+    }
+    .overlay {
+        opacity: 0;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        i {
+            color: $whiteColor;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            font-size: 2rem;
+        }
+    }
+}
+// statistics section
+.statistics {
+    padding: 4.5rem 0 5.7rem;
+    .number {
+        @extend %txt-play-bold-50-white;
+        &:after {
+            display: block;
+            height: 2px;
+            content: " ";
+            background-color: $whiteColor;
+            width: 2.8rem;
+            margin-left: 42%;
+        }
+    }
+    .label {
+        @extend %txt-play-reg-26-white;
+    }
+}
+// from blog section
+.from-blog {
+    @extend %carouselStyle;
+    .media {
+        transition-duration: 0.4s;
+        img {
+            margin: 0 !important;
+        }
+        .date {
+            @extend %txt-opensans-italic-14-seondary;
+        }
+        .blog-sec {
+            @extend %txt-opensans-reg-14-seondary;
+        }
+        a {
+           @extend  %txt-opensans-bold-14-primary;
+           margin-left: 65%;
+        }
+        .media-body {
+            padding: 3.2rem 1.6rem;
+        }
+        &:hover {
+            transform: translate(-10px, -15px);
+            box-shadow: 10px 10px 16px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
+// arabic page style
+html[lang='ar']{
+    .statistics {
+        .number:after {
+            margin-left: 0;
+            margin-right: 42%;
+        }
+    }
+    .recent-projects, .from-blog {
+        .carousel-controls-custom {
+            i {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}

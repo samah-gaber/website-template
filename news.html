@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MASTIA</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-left">
+    <!-- start of main header section -->
+    <header class="main-header">
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 social">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 info">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="far fa-clock"></i>
+                                <span id="header-date">Mon-Sat:7:00-17:00</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-phone"></i>
+                                <span id="header-phone">+ 386 40 111 5555</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="far fa-envelope"></i>
+                                <span><a href="#" id="header-email">info@yourdomain.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/logo.png" alt="MASTIA">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navigation">
+                    <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="navigation-bar collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" id="nav-home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-about-us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-pages">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="news.html" class="nav-link" id="nav-blog">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus.html" class="nav-link" id="nav-contact-us">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="lang-btn" class="ar" onclick="translatePage(event)">العربية</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of main header section -->
+    <!-- start of bread crumps section -->
+    <section class="bread-crumps bg-primary">
+        <div class="container">
+            <p id="bread-crumps-main-blog">BLOG</p>
+            <p id="bread-crumps-blog"><a href="index.html" id="bread-crumps-home">Home</a>>Blog</p>
+        </div>
+    </section>
+    <!-- end of bread crumps section -->
+    <!-- start of main section -->
+    <main class="news-main">
+        <div class="container">
+            <div class="row">
+                <!-- start of left section -->
+                <section class="col-10 col-md-8" id="left-sec">
+                    <!-- first page -->
+                    <section id="page-1" class="page" data-id="1">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news1.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-1-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-1-title">Steps Toward Developing A Content Strategy</h5>
+                                <p class="card-text" id="card-1-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-1-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news2.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-2-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-2-title">Looking for Developers? Try This Geeky Community</h5>
+                                <p class="card-text" id="card-2-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-2-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news3.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-3-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-3-title">How to Spend Less Than an Hour a Day on Email Marketing</h5>
+                                <p class="card-text" id="card-3-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-3-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="page-2" class="page" data-id="2">
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news4.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-4-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-4-title">Steps Toward Developing A Content Strategy</h5>
+                                <p class="card-text" id="card-4-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-4-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news5.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-5-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-5-title">Looking for Developers? Try This Geeky Community</h5>
+                                <p class="card-text" id="card-5-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-5-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="imgs/news6.jpg" alt="Card image cap">
+                            <div class="date bg-primary">
+                                <p id="card-6-date">DATE <br>March 24, 2015</p>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title" id="card-6-title">How to Spend Less Than an Hour a Day on Email Marketing</h5>
+                                <p class="card-text" id="card-6-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab debitis ea est illum ipsa itaque liberop tiovolup Conseq uuntur deserunt expedita, fugiat hic illum porro quidem quis recusandae vero? Aliquiassumenda cum delectus eaque eligendi, enim eum excepturi fugit illum impedit in iste laudantium modi natus, nisi nobis gfy  g obcaecati praesentium quis reiciendis rerum sapiente […]</p>
+                                <a href="#">
+                                    <button class="primary-btn" id="card-6-button">READ MORE</button>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <!-- <a class="page-link" id="prev" href="#" onclick="nextPrevPage(event)"> -->
+                                <a class="page-link navigat-link" id="prev" href="#">
+                                    <i class="fas fa-angle-double-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#page-1" onclick="showPage(1)" id="pagination-1">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#page-2" onclick="showPage(2)" id="pagination-2">2</a></li>
+                            <li class="page-item">
+                                <!-- <a class="page-link" id="next" href="#" onclick="nextPrevPage(event)"> -->
+                                <a class="page-link navigat-link" id="next" href="#">
+                                    <i class="fas fa-angle-double-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <!-- end of left section -->
+                <!-- start of right section -->
+                <section class="col-10 col-md-4" id="right-sec">
+                    <!-- search bar section -->
+                    <section class="search-bar">
+                        <input class="form-control mr-0 bg-light" type="search" placeholder="Search" aria-label="Search" id="search-input" data-type="input">
+                        <i class="fas fa-search"></i>
+                    </section>
+                    <!-- start of recent posts section -->
+                    <section class="recent-posts">
+                        <h5 id="recent-posts-title">Recent Posts</h5>
+                        <div class="media">
+                            <img class="mr-3" src="imgs/post1.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p id="post-1-paragraph">There is no good blog without tim great readability is very important</p>
+                                <h6 class="mt-0" id="post-1-title">VIRAL POLAROID UGH</h6>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="imgs/post2.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p id="post-2-paragraph">6 Reasons to attend Elevate New York 2015 events one way of the development</p>
+                                <h6 class="mt-0" id="post-2-title">LABITUR QUI</h6>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="imgs/post3.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p id="post-3-paragraph">User Experience As A Ranking Signal Is Currently Only For Mobile Results</p>
+                                <h6 class="mt-0" id="post-3-title">VIRAL POLAROID UGH</h6>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="mr-3" src="imgs/post4.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <p id="post-4-paragraph">When you start with what's at stake for the right to their attention</p>
+                                <h6 class="mt-0" id="post-4-title">El HIS NONUMES</h6>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end of recent posts section -->
+                    <!-- start of latest projects section -->
+                    <section class="latest-projects">
+                        <h5 id="latest-projects-title">LATEST PROJECTS</h5>
+                        <div class="row">
+                            <div class="col-6"><img src="imgs/project1.jpg" alt="" class="img-fluid"></div>
+                            <div class="col-6"><img src="imgs/project2.jpg" alt="" class="img-fluid"></div>
+                            <div class="col-6"><img src="imgs/project3.jpg" alt="" class="img-fluid"></div>
+                            <div class="col-6"><img src="imgs/project4.jpg" alt="" class="img-fluid"></div>
+                        </div>
+                    </section>
+                    <!-- end of latest projects section -->
+                    <!-- start of blog categories section -->
+                    <section class="blog-categories">
+                        <h5 id="blog-categories-title">Blog Categories</h5>
+                        <ul>
+                            <li><a href="#" id="category-1">Building</a></li>
+                            <li><a href="#" id="category-2">Company</a></li>
+                            <li><a href="#" id="category-3">Design</a></li>
+                            <li><a href="#" id="category-4">Press</a></li>
+                            <li><a href="#" id="category-5">Tips</a></li>
+                        </ul>
+                    </section>
+                    <!-- end of blog categories section -->
+                </section>
+                <!-- end of right section -->
+            </div>
+        </div>
+    </main>
+    <!-- end of main section -->
+    <!-- start of get in touch section -->
+    <section class="get-in-touch bg-primary">
+        <div class="container">
+            <p class="mb-0" id="get-in-touch-sentence">GO AHEAD AND FIND OUT HOW WE CAN HELP YOU!</p>
+            <button class="ghost-btn" id="get-in-touch-button">GET IN TOUCH</button>
+        </div>
+    </section>
+    <!-- end of get in touch section -->
+    <!-- start of footer section -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row top-part">
+                <div class="col-10 col-md-6 col-lg-3 about-us">
+                    <h6 id="footer-about-us-title">ABOUT US</h6>
+                    <p id="footer-about-us-paragraph">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+                        sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen</p>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 related-links">
+                    <h6 id="footer-related-links-title">RELATED LINKS</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-related-links-1">Official Site</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-2">CreativeMarket Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-3">Materializer page on CM</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-4">Electronic WP Theme</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-5">Was favvvv</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 news-and-media">
+                    <h6 id="footer-news-title">NEWS & MEDIA</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-news-1">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-2">News and Press Realeases</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-3">Interviews</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-4">Subsidiaries Media Contacts</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-5">Media Kit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 get-touch">
+                    <h6 id="footer-get-in-touch-title">GET IN TOUCH</h6>
+                    <p id="footer-get-in-touch-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-address">84 Street, City, State 24813</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-phone">+00(123)4567890</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-email">info@yourcompany.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lower-part bg-black text-center">
+            <p id="footer-copyrights">Made with
+                <span>by</span> Revolthemes.net All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer section -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/translation/newsarabiccontent.js"></script>
+    <script src="js/translation/newsenglishcontent.js"></script>
+    <script src="js/translation/translatescript.js"></script>
+</body>
+
+</html>

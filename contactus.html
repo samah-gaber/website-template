@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MASTIA</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="text-left">
+    <!-- start of main header section -->
+    <header class="main-header">
+        <header class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 social">
+                        <div class="row">
+                            <div class="col-3">
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-linkedin-in"></i>
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 info">
+                        <div class="row">
+                            <div class="col-4">
+                                <i class="far fa-clock"></i>
+                                <span id="header-date">Mon-Sat:7:00-17:00</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-phone"></i>
+                                <span id="header-phone">+ 386 40 111 5555</span>
+                            </div>
+                            <div class="col-4">
+                                <i class="far fa-envelope"></i>
+                                <span><a href="#" id="header-email">info@yourdomain.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/logo.png" alt="MASTIA">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navigation">
+                    <i class="fas fa-bars navbar-toggler-icon"></i>
+                </button>
+                <div class="navigation-bar collapse navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link" id="nav-home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-about-us">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-pages">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" id="nav-projects">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="news.html" class="nav-link" id="nav-blog">BLOG</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="contactus.html" class="nav-link" id="nav-contact-us">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="lang-btn" class="ar" onclick="translatePage(event)">العربية</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of main header section -->
+    <!-- start of bread crumps section -->
+    <section class="bread-crumps bg-primary">
+        <div class="container">
+            <p id="bread-crumps-main-projects">PROJECTS</p>
+            <p id="bread-crumps-projects"><a href="index.html">Home</a>>PROJECTS</p>
+        </div>
+    </section>
+    <!-- end of bread crumps section -->
+    <!-- start of contact us section -->
+    <section class="contact-us">
+        <div class="container">
+            <h4 id="contact-us-title">CONTACT US</h4>
+            <form action="">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <input type="text" name="first name" placeholder="First Name" class="w-100" id="first-name" data-type="input">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="text" name="last name" placeholder="Last Name" class="w-100" id="last-name" data-type="input">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="email" name="email" placeholder="Your E-Mail" class="w-100" id="email" data-type="input">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <input type="text" name="website" placeholder="Website" class="w-100" id="website" data-type="input">
+                    </div>
+                    <div class="col-12">
+                        <textarea name="message" cols="30" rows="10"  placeholder="Your Message" class="w-100" id="message" data-type="input"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="primary-btn" id="form-btn">SEND</button>
+            </form>
+        </div>
+    </section>
+    <!-- end of contact us section -->
+    <!-- start of google map section -->
+    <section class="google-map">
+        <div id="google_canvas"></div>
+    </section>
+    <!-- end of google map section -->
+    <!-- start of get in touch section -->
+    <section class="get-in-touch bg-primary">
+        <div class="container">
+            <p class="mb-0" id="get-in-touch-sentence">GO AHEAD AND FIND OUT HOW WE CAN HELP YOU!</p>
+            <button class="ghost-btn" id="get-in-touch-button">GET IN TOUCH</button>
+        </div>
+    </section>
+    <!-- end of get in touch section -->
+    <!-- start of footer section -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row top-part">
+                <div class="col-10 col-md-6 col-lg-3 about-us">
+                    <h6 id="footer-about-us-title">ABOUT US</h6>
+                    <p id="footer-about-us-paragraph">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+                        sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen</p>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 related-links">
+                    <h6 id="footer-related-links-title">RELATED LINKS</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-related-links-1">Official Site</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-2">CreativeMarket Profile</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-3">Materializer page on CM</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-4">Electronic WP Theme</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-related-links-5">Was favvvv</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 news-and-media">
+                    <h6 id="footer-news-title">NEWS & MEDIA</h6>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-news-1">Events</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-2">News and Press Realeases</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-3">Interviews</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-4">Subsidiaries Media Contacts</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-news-5">Media Kit</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-10 col-md-6 col-lg-3 get-touch">
+                    <h6 id="footer-get-in-touch-title">GET IN TOUCH</h6>
+                    <p id="footer-get-in-touch-paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <ul>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-address">84 Street, City, State 24813</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-phone">+00(123)4567890</a>
+                        </li>
+                        <li>
+                            <a href="#" id="footer-get-in-touch-email">info@yourcompany.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lower-part bg-black text-center">
+            <p id="footer-copyrights">Made with
+                <span>by</span> Revolthemes.net All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- end of footer section -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&fbclid=IwAR17mQnjXSi8l8IQ76VI7GoHVlR9b3Z0XsMAEqRe6dNBUElYpdHOS0NnPOk"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="js/translation/contactusarabiccontent.js"></script>
+    <script src="js/translation/contactusenglishcontent.js"></script>
+    <script src="js/translation/translatescript.js"></script>
+</body>
+</html>

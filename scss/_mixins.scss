@@ -1,0 +1,14 @@
+// font
+@mixin fontFace($fontFamily, $src){
+	@font-face{
+		font-family: $fontFamily;
+		src: url($src);
+	}
+}
+// text style
+@mixin text($fontFamily, $fontSize, $color){
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	color: $color;
+	line-height: $fontSize * 1.618;
+}
